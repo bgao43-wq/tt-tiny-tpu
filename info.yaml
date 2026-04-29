@@ -1,27 +1,25 @@
-# Tiny Tapeout project information
 project:
   title: "Tiny TPU Systolic Array"
-  author: "bgao43-wq"
+  author: "Tom Xia"
   discord: ""
   description: "A small systolic-array-based matrix multiplication accelerator"
   language: "SystemVerilog"
   clock_hz: 10000000
 
-tiles: "1x2"
+  tiles: "1x2"
 
-top_module: "tt_um_project"
+  top_module: "tt_um_project"
 
-source_files:
-  - "tt_um_project.sv"
-  - "top.sv"
-  - "spi_slave_interface.sv"
-  - "ctrl.sv"
-  - "sa_top.sv"
-  - "sa.sv"
-  - "pe.sv"
+  source_files:
+    - "tt_um_project.sv"
+    - "top.sv"
+    - "spi_slave_interface.sv"
+    - "ctrl.sv"
+    - "sa_top.sv"
+    - "sa.sv"
+    - "pe.sv"
 
 pinout:
-  # Inputs
   ui[0]: "SCLK"
   ui[1]: "MOSI"
   ui[2]: "CS_N"
@@ -31,7 +29,6 @@ pinout:
   ui[6]: ""
   ui[7]: ""
 
-  # Outputs
   uo[0]: "MISO"
   uo[1]: ""
   uo[2]: ""
@@ -41,7 +38,6 @@ pinout:
   uo[6]: ""
   uo[7]: ""
 
-  # Bidirectional pins
   uio[0]: ""
   uio[1]: ""
   uio[2]: ""
